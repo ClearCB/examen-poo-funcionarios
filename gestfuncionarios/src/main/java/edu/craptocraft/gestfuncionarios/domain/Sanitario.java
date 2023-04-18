@@ -28,4 +28,18 @@ public class Sanitario extends Persona {
     public void setDiasTrabajados(int diasTrabajados) {
         this.diasTrabajados = diasTrabajados;
     }
+
+    @Override
+    public String toString() {
+        StringBuilder informacion = new StringBuilder();
+
+        informacion.append("\nID: " + this.getId());
+        informacion.append("\nNombre: " + this.getNombre());
+        informacion.append("\nApellido1: " + this.getPrimerApellido());
+        informacion.append("\nApellido2: " + this.getSegundoApellido());
+        informacion.append("\nTitulación: " + this.getEspecialidad());
+        informacion.append("\nPuntos: " + this.getDiasTrabajados());
+
+        return informacion.toString();
+    }
 }

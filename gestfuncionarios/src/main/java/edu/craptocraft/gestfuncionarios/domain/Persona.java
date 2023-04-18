@@ -5,7 +5,7 @@ public class Persona {
     String nombre;
     String primerApellido;
     String segundoApellido;
-    static int contador = 0;
+    public static int contador = 0;
 
     public Persona(int id, String nombre, String primerApellido, String segundoApellido) {
         this.id = id;

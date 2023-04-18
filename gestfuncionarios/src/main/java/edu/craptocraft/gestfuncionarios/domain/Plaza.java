@@ -3,15 +3,12 @@ package edu.craptocraft.gestfuncionarios.domain;
 public class Plaza {
     int id;
     String tipoPlaza;
-    boolean adjudicada;
+    boolean adjudicada = false;
     Persona persona = null;
-    boolean personaNotificada;
 
-    public Plaza(int id, String tipoPlaza, boolean adjudicada, boolean personaNotificada) {
+    public Plaza(int id, String tipoPlaza) {
         this.id = id;
         this.tipoPlaza = tipoPlaza;
-        this.adjudicada = adjudicada;
-        this.personaNotificada = personaNotificada;
     }
 
     public int getId() {
@@ -44,14 +41,6 @@ public class Plaza {
 
     public void setPersona(Persona persona) {
         this.persona = persona;
-    }
-
-    public boolean isPersonaNotificada() {
-        return personaNotificada;
-    }
-
-    public void setPersonaNotificada(boolean personaNotificada) {
-        this.personaNotificada = personaNotificada;
     }
 
     @Override

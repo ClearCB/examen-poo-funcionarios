@@ -1,7 +1,9 @@
-package edu.craptocraft.gestfuncionarios.domain;
+package edu.craptocraft.gestfuncionarios.gestion;
 
 import java.util.List;
-import java.util.Map;
+
+import edu.craptocraft.gestfuncionarios.domain.Persona;
+import edu.craptocraft.gestfuncionarios.domain.Plaza;
 
 public interface Gestion {
 
