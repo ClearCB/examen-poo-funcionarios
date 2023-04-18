@@ -1,0 +1,82 @@
+============================================
+La última adjudicación de plazas ha producido
+los siguientes resultados para DOCENTES
+============================================
+ID Plaza 0
+Tipo: D
+Adjudicada: ADJUDICADA
+ID: 4
+Nombre:nombre2
+Apellido1: apellido2
+Apellido2: apellido2
+Titulación: titulacion2
+Puntos: 4.0
+____________________________________________
+ID Plaza 2
+Tipo: D
+Adjudicada: ADJUDICADA
+ID: 2
+Nombre:nombre1
+Apellido1: apellido1
+Apellido2: apellido1
+Titulación: titulacion1
+Puntos: 3.0
+____________________________________________
+ID Plaza 4
+Tipo: D
+Adjudicada: ADJUDICADA
+ID: 0
+Nombre:nombre0
+Apellido1: apellido0
+Apellido2: apellido0
+Titulación: titulacion0
+Puntos: 2.0
+____________________________________________
+ID Plaza 6
+Tipo: D
+Adjudicada: NO_ADJUDICADA
+____________________________________________
+ID Plaza 8
+Tipo: D
+Adjudicada: NO_ADJUDICADA
+=============================================
+La última adjudicación de plazas ha producido
+los siguientes resultados para SANITARIOS
+=============================================
+ID Plaza 1
+Tipo: S
+Adjudicada: ADJUDICADA
+ID: 5
+Nombre:nombre290
+Apellido1: apellido221
+Apellido2: apellido2290
+Especialidad: especialidad2
+Dias experiencia: 42
+____________________________________________
+ID Plaza 3
+Tipo: S
+Adjudicada: ADJUDICADA
+ID: 3
+Nombre:nombre190
+Apellido1: apellido121
+Apellido2: apellido2190
+Especialidad: especialidad1
+Dias experiencia: 41
+____________________________________________
+ID Plaza 5
+Tipo: S
+Adjudicada: ADJUDICADA
+ID: 1
+Nombre:nombre090
+Apellido1: apellido021
+Apellido2: apellido2090
+Especialidad: especialidad0
+Dias experiencia: 40
+____________________________________________
+ID Plaza 7
+Tipo: S
+Adjudicada: NO_ADJUDICADA
+____________________________________________
+ID Plaza 9
+Tipo: S
+Adjudicada: NO_ADJUDICADA
