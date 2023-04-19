@@ -2,6 +2,6 @@
 
 Examen resulto para el siguiente enunciado:
 
-[enunciado](./docs/enunciado.pdf)
+[enunciado](./docs/enunciado.txt)
 
 [salida por consola](./docs/salida-consola.txt)
