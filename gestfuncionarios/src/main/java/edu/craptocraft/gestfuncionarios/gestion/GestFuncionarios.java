@@ -82,9 +82,11 @@ public class GestFuncionarios implements Gestion {
 
     public void mostrarAdjudicaciones(List<Plaza> adjudicaciones) {
 
+        // Mostrar las adjudicaciones ocupadas
         adjudicaciones.stream().filter(adjudicacion -> adjudicacion.getPersona() != null).forEach(
                 adjudicacion -> System.out.println(adjudicacion.toString() + adjudicacion.getPersona().toString()));
 
+        // Mostrar las adjudicaciones vacías
         adjudicaciones.stream().filter(adjudicacion -> adjudicacion.getPersona() == null).forEach(
                 adjudicacion -> System.out.println(adjudicacion.toString()));
     }
@@ -120,14 +122,14 @@ public class GestFuncionarios implements Gestion {
         GestFuncionarios gestion = new GestFuncionarios();
 
         List<Persona> trabajadores = new ArrayList<Persona>();
-        Persona maria = new Docente(9, "maria", "app1", "app2", "Crack", 2.0);
-        Persona pepe = new Docente(1, "pepe", "app1", "app2", "Top", 4.3);
-        Persona juan = new Docente(2, "juan", "app1", "app2", "Super Crack", 5.3);
-        Persona julia = new Sanitario(3, "julia", "app1", "app2", "Mejor", 6);
-        Persona luisa = new Sanitario(6, "luisa", "app1", "app2", "Super Crack", 8);
-        Persona sofia = new Sanitario(3, "sofia", "app1", "app2", "Crack", 1);
-        Persona nacho = new Sanitario(6, "nacho", "app1", "app2", "Super", 13);
-        Persona francesc = new Sanitario(12, "francesc", "app1", "app2", "Super", 20);
+        Persona maria = new Docente("maria", "app1", "app2", "Crack", 24.0);
+        Persona pepe = new Docente("pepe", "app1", "app2", "Top", 4.3);
+        Persona juan = new Docente("juan", "app1", "app2", "Super Crack", 5.3);
+        Persona julia = new Sanitario("julia", "app1", "app2", "Mejor", 6);
+        Persona luisa = new Sanitario("luisa", "app1", "app2", "Super Crack", 8);
+        Persona sofia = new Sanitario("sofia", "app1", "app2", "Crack", 1);
+        Persona nacho = new Sanitario("nacho", "app1", "app2", "Super", 13);
+        Persona francesc = new Sanitario("francesc", "app1", "app2", "Super", 20);
 
         trabajadores.add(maria);
         trabajadores.add(pepe);

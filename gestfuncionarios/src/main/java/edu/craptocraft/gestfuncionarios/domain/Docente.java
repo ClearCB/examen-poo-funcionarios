@@ -4,10 +4,10 @@ public class Docente extends Persona {
     String titulacion;
     double puntos;
 
-    public Docente(int id, String nombre, String primerApellido, String segundoApellido,
+    public Docente(String nombre, String primerApellido, String segundoApellido,
             String titulacion, double puntos) {
 
-        super(id, nombre, primerApellido, segundoApellido);
+        super(nombre, primerApellido, segundoApellido);
         Persona.contador += 1;
         this.titulacion = titulacion;
         this.puntos = puntos;

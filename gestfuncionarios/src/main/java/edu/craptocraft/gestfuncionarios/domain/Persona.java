@@ -5,10 +5,10 @@ public class Persona {
     String nombre;
     String primerApellido;
     String segundoApellido;
-    public static int contador = 0;
+    public static int contador = 1;
 
-    public Persona(int id, String nombre, String primerApellido, String segundoApellido) {
-        this.id = id;
+    public Persona(String nombre, String primerApellido, String segundoApellido) {
+        this.id = Persona.contador;
         this.nombre = nombre;
         this.primerApellido = primerApellido;
         this.segundoApellido = segundoApellido;

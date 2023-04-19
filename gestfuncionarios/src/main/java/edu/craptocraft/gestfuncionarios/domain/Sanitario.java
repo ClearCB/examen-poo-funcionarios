@@ -4,10 +4,10 @@ public class Sanitario extends Persona {
     String especialidad;
     int diasTrabajados;
 
-    public Sanitario(int id, String nombre, String primerApellido, String segundoApellido,
+    public Sanitario(String nombre, String primerApellido, String segundoApellido,
             String especialidad, int diasTrabajados) {
 
-        super(id, nombre, primerApellido, segundoApellido);
+        super(nombre, primerApellido, segundoApellido);
         Persona.contador += 1;
         this.especialidad = especialidad;
         this.diasTrabajados = diasTrabajados;
