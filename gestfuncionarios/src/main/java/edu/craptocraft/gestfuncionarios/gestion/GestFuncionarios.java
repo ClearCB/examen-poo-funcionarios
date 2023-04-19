@@ -29,7 +29,7 @@ public class GestFuncionarios implements Gestion {
             Persona maxDocente = this.maxPuntos(personas);
             Persona maxSanitario = this.maxDiasTrabajados(personas);
 
-            if (plaza.getTipoPlaza().equals("D") && !plaza.isAdjudicada() && maxDocente != null) {
+            if (this.plazaLibre(plaza, "D") && maxDocente != null) {
 
                 plaza.setPersona(maxDocente);
                 plaza.setAdjudicada(true);
@@ -37,7 +37,7 @@ public class GestFuncionarios implements Gestion {
                 this.adjudicacionesDocentes.add(plaza);
             }
 
-            else if (plaza.getTipoPlaza().equals("S") && !plaza.isAdjudicada() && maxSanitario != null) {
+            else if (this.plazaLibre(plaza, "S") && maxSanitario != null) {
 
                 plaza.setPersona(maxSanitario);
                 plaza.setAdjudicada(true);
@@ -72,6 +72,12 @@ public class GestFuncionarios implements Gestion {
                 .max(Comparator.comparing(Sanitario::getDiasTrabajados));
 
         return maxSanitario.isPresent() ? maxSanitario.get() : null;
+    }
+
+    public boolean plazaLibre(Plaza plaza, String tipoPlaza) {
+
+        return plaza.getTipoPlaza().equals(tipoPlaza) && !plaza.isAdjudicada();
+
     }
 
     public void mostrarAdjudicaciones(List<Plaza> adjudicaciones) {
