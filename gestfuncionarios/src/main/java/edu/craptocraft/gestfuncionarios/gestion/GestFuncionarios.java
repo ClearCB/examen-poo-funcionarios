@@ -2,9 +2,7 @@ package edu.craptocraft.gestfuncionarios.gestion;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 import edu.craptocraft.gestfuncionarios.domain.Docente;
@@ -18,8 +16,8 @@ public class GestFuncionarios implements Gestion {
     List<Plaza> adjudicacionesSanitarios = new ArrayList<Plaza>();
     List<Plaza> adjudicacionesVacias = new ArrayList<Plaza>();
 
-    public GestFuncionarios() {
-    };
+    private GestFuncionarios() {
+    }
 
     @Override
     public void adjudicarPlazas(List<Persona> personas, List<Plaza> plazas) {
@@ -82,11 +80,9 @@ public class GestFuncionarios implements Gestion {
 
     public void mostrarAdjudicaciones(List<Plaza> adjudicaciones) {
 
-        // Mostrar las adjudicaciones ocupadas
         adjudicaciones.stream().filter(adjudicacion -> adjudicacion.getPersona() != null).forEach(
                 adjudicacion -> System.out.println(adjudicacion.toString() + adjudicacion.getPersona().toString()));
 
-        // Mostrar las adjudicaciones vacías
         adjudicaciones.stream().filter(adjudicacion -> adjudicacion.getPersona() == null).forEach(
                 adjudicacion -> System.out.println(adjudicacion.toString()));
     }
@@ -122,7 +118,7 @@ public class GestFuncionarios implements Gestion {
         GestFuncionarios gestion = new GestFuncionarios();
 
         List<Persona> trabajadores = new ArrayList<Persona>();
-        Persona maria = new Docente("maria", "app1", "app2", "Crack", 24.0);
+        Persona maria = new Docente("maria", "app1", "app2", "Crack", 2.0);
         Persona pepe = new Docente("pepe", "app1", "app2", "Top", 4.3);
         Persona juan = new Docente("juan", "app1", "app2", "Super Crack", 5.3);
         Persona julia = new Sanitario("julia", "app1", "app2", "Mejor", 6);
